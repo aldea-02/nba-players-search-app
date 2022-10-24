@@ -18,14 +18,14 @@ export default function Search() {
 	}
 	return (
 		<>
-			<div className='flex max-w-2xl px-4 mx-auto pt-12 gap-10 sm:flex-row flex-col min-w-min'>
-				<form action=''>
+			<div className='flex max-w-2xl px-4 mx-auto pt-12 gap-10 sm:flex-row flex-col min-w-[300px]'>
+				<form>
 					<div className='flex bg-white w-full border rounded-md p-2'>
 						<HiOutlineSearch size={28} />
 						<input type='text' name='search' placeholder="Enter player's name" onChange={refreshSearch} className=' outline-none w-40 pl-2' />
 					</div>
 				</form>
-				<div className={players.length !== 0 ? 'grid grid-cols-2' : 'grid grid-cols-1'}>
+				<div className={players.length !== 0 ? 'grid grid-cols-3 sm:grid-cols-2' : 'grid grid-cols-1'}>
 					{players.length !== 0 ? (
 						players.map((player) => (
 							<div
