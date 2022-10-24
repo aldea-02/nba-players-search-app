@@ -1,0 +1,1 @@
+Using the https://www.balldontlie.io API, search through all the NBA players and click on their name to display their team
