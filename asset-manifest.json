@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nba-players-app/static/css/main.d78da431.css",
+    "main.js": "/nba-players-app/static/js/main.f23f91ab.js",
+    "index.html": "/nba-players-app/index.html",
+    "main.d78da431.css.map": "/nba-players-app/static/css/main.d78da431.css.map",
+    "main.f23f91ab.js.map": "/nba-players-app/static/js/main.f23f91ab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d78da431.css",
+    "static/js/main.f23f91ab.js"
+  ]
+}
