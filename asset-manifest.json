@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nba-players-app/static/css/main.d78da431.css",
-    "main.js": "/nba-players-app/static/js/main.f23f91ab.js",
+    "main.css": "/nba-players-app/static/css/main.8c2eabb7.css",
+    "main.js": "/nba-players-app/static/js/main.6869ccca.js",
     "index.html": "/nba-players-app/index.html",
-    "main.d78da431.css.map": "/nba-players-app/static/css/main.d78da431.css.map",
-    "main.f23f91ab.js.map": "/nba-players-app/static/js/main.f23f91ab.js.map"
+    "main.8c2eabb7.css.map": "/nba-players-app/static/css/main.8c2eabb7.css.map",
+    "main.6869ccca.js.map": "/nba-players-app/static/js/main.6869ccca.js.map"
   },
   "entrypoints": [
-    "static/css/main.d78da431.css",
-    "static/js/main.f23f91ab.js"
+    "static/css/main.8c2eabb7.css",
+    "static/js/main.6869ccca.js"
   ]
 }
