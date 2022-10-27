@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { HiOutlineSearch } from 'react-icons/hi'
 import Modal from './Modal'
+import Player from './Player'
 
 export default function Search() {
 	const [players, setPlayers] = useState([])
@@ -25,27 +26,26 @@ export default function Search() {
 						<input type='text' name='search' placeholder="Enter player's name" onChange={refreshSearch} className=' outline-none w-40 pl-2' />
 					</div>
 				</form>
-				<div className={players.length !== 0 ? 'grid grid-cols-3 sm:grid-cols-2' : 'grid grid-cols-1'}>
+				<ul className={`grid ${players.length !== 0 ? 'grid-cols-3 sm:grid-cols-2' : 'grid-cols-1'}`}>
 					{players.length !== 0 ? (
 						players.map((player) => (
-							<div
-								className='text-white bg-neutral-900 p-2 m-1 rounded-md cursor-pointer'
+							<Player
 								key={player.id}
-								onClick={(e) => {
-									setModal(true)
-									setTeam(player.team.full_name)
-									setAbbreviation(player.team.abbreviation)
-								}}
-							>
-								{player.first_name + ' ' + player.last_name}
-							</div>
+								modalChangeStateForPlayer={setModal}
+								teamChangeState={setTeam}
+								abbreviationChangeState={setAbbreviation}
+								teamFullName={player.team.full_name}
+								abb={player.team.abbreviation}
+								fname={player.first_name}
+								lname={player.last_name}
+							/>
 						))
 					) : (
 						<div className='text-white bg-red-900 p-2 m-1 rounded-md h-10'>There are no matching players !</div>
 					)}
-				</div>
+				</ul>
 			</div>
-			<Modal on={modal} team={team} abbreviation={abbreviation} modalChangeState={setModal} />
+			<Modal on={modal} team={team} abbreviation={abbreviation} modalChangeStateForModal={setModal} />
 		</>
 	)
 }
